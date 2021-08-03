@@ -1,0 +1,23 @@
+#!/bin/bash
+# install microsoft public GPG key
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+# register the mssql server ubuntu repo for SQL 2019
+sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2019.list)"
+# install repository configuration
+curl -sSL https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
+# run repo update
+sudo apt-get update
+# install mssql package
+sudo apt-get install -y mssql-server
+# run mssql setup with inputs
+printf "2\nYes\n" | sudo /opt/mssql/bin/mssql-conf setup
+# install php extension for php74
+sudo apt-get install -y php7.4-sybase
+# install ms sql tools and unixodbc
+sudo ACCEPT_EULA=Y apt install mssql-tools unixodbc-dev
+# add mssql tools to path
+echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+# attempt to start mssql server
+sudo systemctl start mssql-server
+# check status of mssql server
+systemctl status mssql-server

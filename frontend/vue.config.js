@@ -12,7 +12,7 @@ module.exports = {
     proxy: {
       '/api/': {
           // target: process.env.DEV_SERVER_PROXY_NOPORT ? 'http://localhost' : 'http://localhost:8000' ,
-          target: 'http://sfgonboarding.test',
+          target: 'http://localhost:3000',
           changeOrigin: true,
           logLevel: 'debug'
       }

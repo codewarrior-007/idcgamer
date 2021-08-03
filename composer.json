@@ -13,7 +13,6 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "hellosign/hellosign-php-sdk": "^3.7",
         "laravel/framework": "^8.40",
-        "laravel/horizon": "^5.7",
         "laravel/tinker": "^2.5",
         "mariuzzo/laravel-js-localization": "^1.8",
         "therobfonz/laravel-mandrill-driver": "^3.1"

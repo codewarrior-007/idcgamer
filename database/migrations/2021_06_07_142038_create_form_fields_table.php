@@ -21,7 +21,7 @@ class CreateFormFieldsTable extends Migration
             $table->integer('max_length')->default(0);
             $table->string('type');
             $table->string('hash');
-            $table->string('placeholder');
+            $table->text('placeholder');
             $table->timestamps();
         });
     }

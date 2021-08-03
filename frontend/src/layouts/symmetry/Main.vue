@@ -1,38 +1,27 @@
 <template>
-  <v-app>
-    <v-row class="s-container">
-      <v-col class="sidebar" v-if="showMode !== 'stack'">
-        <symmetry-menu-side
-          :items="sidebarMenu"
-          :mode="showMode"
-        ></symmetry-menu-side>
-      </v-col>
-      <v-col class="main">
-        <symmetry-header
-          :username="username"
-          :mode="showMode"
-          :items="sidebarMenu"
-        >
-          <h1>
-            {{ title }}
-          </h1>
-          <hr />
-          <h3>
-            {{ subtitle }}
-          </h3>
-        </symmetry-header>
-        <transition name="fade" mode="out-in">
-          <router-view></router-view>
-        </transition>
-      </v-col>
-    </v-row>
+  <div>
+    <symmetry-header
+      :username="username"
+      :mode="showMode"
+      :items="sidebarMenu"
+    >
+      <h1>
+        {{ title }}
+      </h1>
+      <hr />
+      <h3>
+        {{ subtitle }}
+      </h3>
+    </symmetry-header>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
     <symmetry-footer></symmetry-footer>
-  </v-app>
+  </div>
 </template>
 
 <script>
 import SymmetryHeader from "./Header";
-import SymmetryMenuSide from "./MenuSide";
 import SymmetryFooter from "./Footer";
 import { navSymmetry as nav } from "../../_nav";
 import { PAGE_TITLES } from "@/utils/const";
@@ -41,7 +30,6 @@ export default {
   name: "SymmetryMain",
   components: {
     SymmetryHeader,
-    SymmetryMenuSide,
     SymmetryFooter,
   },
   computed: {

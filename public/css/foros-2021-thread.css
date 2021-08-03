@@ -1,0 +1,95 @@
+/*
+======================================================================================================================
+Mis juegos
+======================================================================================================================
+*/
+html {
+  scroll-behavior: smooth; }
+
+@media (max-width: 575.98px) {
+  .img-user-forum {
+    max-width: 100%;
+    height: auto; } }
+
+@media (min-width: 576px) {
+  .img-user-forum {
+    height: 48px;
+    width: 48px; } }
+
+.img-user-forum {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem; }
+
+.img-user-small {
+  height: 1.25rem;
+  width: 1.25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem; }
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top-custom {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55px;
+    z-index: 1020; } }
+
+.container-range {
+  height: 200px; }
+
+.line {
+  height: 100%;
+  background-color: #e0e0e0;
+  border-radius: 1rem;
+  width: .125rem; }
+
+.dragger {
+  background-color: #00ff7f;
+  width: .5rem;
+  border-radius: 1rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: -.1875rem;
+  margin-top: 1.25rem;
+  cursor: pointer;
+  -webkit-transition: background-color .2s,top .3s;
+  transition: background-color .2s,top .3s; }
+
+.progress {
+  background-color: #252e38; }
+
+.popover {
+  font-size: .875rem;
+  word-wrap: break-word;
+  background-color: #13181d;
+  background-clip: padding-box;
+  border: 1px solid #314954;
+  border-radius: .3rem; }
+
+.popover-header {
+  color: #fff;
+  background-color: #314954;
+  border-bottom: 1px solid rgba(0, 255, 126, 0.25);
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px); }
+
+.popover-body {
+  padding: .5rem .75rem;
+  color: #fff; }
+
+.popover .arrow::after {
+  border-top-color: #314954; }
+
+.jumptarget::before {
+  content: "";
+  display: block;
+  height: 70px;
+  /* fixed header height*/
+  margin: -70px 0 0;
+  /* negative fixed header height */ }

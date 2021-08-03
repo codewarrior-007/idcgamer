@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+  .form-thread-title {
+    width: 400px; } }
+
+.form-select {
+  height: 50px; }
+
+@media (max-width: 991.98px) {
+  .col-lg-6.border-right.border-green-lighter {
+    border: 0 !important; } }

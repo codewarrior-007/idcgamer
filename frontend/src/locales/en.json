@@ -1,4 +1,44 @@
 {
+  "global": {
+    "language": "en",
+    "domain": "gamer.idcgames.com"
+  },
+
+  "header": {
+    "user_name": "Willy",
+    "login_txt": "Login",
+    "register_txt": "Register"
+  },
+
+  "dashboard": {
+    "search_user": "Search user",
+    "search": "Search"
+  },
+
+  "footer": {
+    "follow_idc_footer": "Follow IDC Games",
+    "about_idc_url": "https://about.idcgames.com/about/",
+    "about_idc_text": "About",
+    "idc_services_url": "https://about.idcgames.com/about/docs/What-is-IDC-Games/",
+    "idc_services_text": "Services",
+    "idc_games_tools": "https://about.idcgames.com/about/docs/Publishing-Tools/",
+    "idc_games_tools_text": "Tools",
+    "idc_influencer_about_url": "https://about.idcgames.com/about/docs/IDC-Influencer2/",
+    "idc_influencer_about_text": "Influencers",
+    "developer_corner_url": "https://developer.idcgames.com/gameintegration/",
+    "developer_corner_text": "Developer Corner",
+    "distribute_your_game_text": "Distribute your game with IDC Games",
+    "url_legal_conditions": "Terms of use",
+    "privacy_legal_title_txt": "Terms of Use",
+    "url_privacy_policy": "Privacy Policy",
+    "privacy_policy_footer": "Privacy Policy",
+    "url_return_policy": "https://idcgames.com",
+    "return_policy_title": "Return Policy",
+    "rights_reserved": "© IDC GAMES 2021. All rights reserved.",
+    "cookies_footer": "Cookies",
+    "cookies_title_text": "Cookies"
+  },
+
   "translations": {
     "en": "English",
     "fr": "French"

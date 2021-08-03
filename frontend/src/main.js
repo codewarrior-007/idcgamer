@@ -2,6 +2,7 @@ import Vue from "vue";
 import { VueMaskDirective } from "v-mask";
 import VueSignaturePad from "vue-signature-pad";
 import CustomGoogleAutocomplete from "vue-custom-google-autocomplete";
+import ScrollBar from '@morioh/v-perfect-scrollbar'
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -15,6 +16,7 @@ import "./sass/overrides.sass";
 
 Vue.use(VueSignaturePad);
 Vue.use(CustomGoogleAutocomplete);
+Vue.use(ScrollBar);
 
 Vue.directive("mask", VueMaskDirective);
 Vue.config.productionTip = false;

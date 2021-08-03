@@ -1,0 +1,205 @@
+/*
+======================================================================================================================
+Mis juegos
+======================================================================================================================
+*/
+@media (max-width: 575.98px) {
+  .img-user-forum {
+    max-width: 100%;
+    height: auto; } }
+
+@media (min-width: 576px) {
+  .img-user-forum {
+    height: 48px;
+    width: 48px; } }
+
+.img-user-forum {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem; }
+
+.img-user-small {
+  height: 1.25rem;
+  width: 1.25rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem; }
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top-custom {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55px;
+    z-index: 1020; } }
+
+input[type=range][orient=vertical] {
+  -webkit-writing-mode: bt-lr;
+      -ms-writing-mode: bt-lr;
+          writing-mode: bt-lr;
+  /* IE */
+  -webkit-appearance: slider-vertical;
+  /* WebKit */
+  width: 8px;
+  height: 175px;
+  padding: 0 5px; }
+
+.slidecontainer {
+  width: 100%; }
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #314954;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s; }
+
+.slider:hover {
+  opacity: 1; }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #00ff7f;
+  cursor: pointer; }
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #00ff7f;
+  cursor: pointer; }
+
+.form-thread-title {
+  width: 400px; }
+
+.form-forum-menu {
+  height: 34px;
+  border: 1px solid #6c757d; }
+
+.text-thread {
+  --max-lines: 2;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem;
+  /* space for ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+html {
+  --lh: 1.5rem;
+  line-height: var(--lh); }
+
+.text-thread::before {
+  position: absolute;
+  content: "   ";
+  inset-block-end: 0;
+  /* "bottom" */
+  inset-inline-end: 0;
+  /* "right" */ }
+
+.text-thread::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  /* "right" */
+  width: 1rem;
+  height: 1rem; }
+
+.card-text p {
+  margin-bottom: 0; }
+
+.text-title-thread {
+  --max-lines: 4;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem;
+  /* space for ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.text-title-thread::before {
+  position: absolute;
+  content: "   ";
+  inset-block-end: 0;
+  /* "bottom" */
+  inset-inline-end: 0;
+  /* "right" */ }
+
+.text-title-thread::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  /* "right" */
+  width: 1rem;
+  height: 1rem; }
+
+.nav-thread-list {
+  border-bottom: 1px solid rgba(0, 255, 126, 0.25); }
+
+.nav-thread-list .nav-link {
+  color: #fff; }
+
+.nav-thread-list .nav-link.active {
+  color: #00ff7f;
+  background-color: transparent;
+  border-color: transparent transparent #00ff7f; }
+
+.img-user-forum-big {
+  height: 115px;
+  width: 115px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 0.25rem; }
+
+.nav-thread-list .nav-link.active, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  color: #00ff7f;
+  background-color: transparent;
+  border-color: transparent transparent #00ff7f; }
+
+.popover {
+  font-size: .875rem;
+  word-wrap: break-word;
+  background-color: #13181d;
+  background-clip: padding-box;
+  border: 1px solid #314954;
+  border-radius: .3rem; }
+
+.popover-header {
+  color: #fff;
+  background-color: #314954;
+  border-bottom: 1px solid rgba(0, 255, 126, 0.25);
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px); }
+
+.popover-body {
+  padding: .5rem .75rem;
+  color: #fff; }
+
+.popover .arrow::after {
+  border-top-color: #314954; }
+
+.jumptarget::before {
+  content: "";
+  display: block;
+  height: 70px;
+  /* fixed header height*/
+  margin: -70px 0 0;
+  /* negative fixed header height */ }

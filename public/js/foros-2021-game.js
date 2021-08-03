@@ -1,0 +1,10 @@
+$("body").on("click",".open-filters",function(){
+    $(this).removeClass("open-filters");
+    $(this).addClass("close-filters");
+    $(this).find("i").addClass("upside-down");
+});
+$("body").on("click",".close-filters",function(){
+    $(this).removeClass("close-filters");
+    $(this).addClass("open-filters");
+    $(this).find("i").removeClass("upside-down");
+});

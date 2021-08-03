@@ -15,10 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ .'/local_only.php';
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('{vueRoutes}', function () {
     return view('webapp');
 })->where('vueRoutes', '^((?!api).)*$'); // except 'api' word

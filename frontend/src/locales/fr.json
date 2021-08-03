@@ -1,4 +1,39 @@
 {
+  "header": {
+    "user_name": "Willy",
+    "login_txt": "Connexion",
+    "register_txt": "S'inscrire"
+  },
+
+  "dashboard": {
+    "search_user": "Rechercher un utilisateur",
+    "search": "Chercher"
+  },
+
+  "footer": {
+    "follow_idc_footer": "Suivre les jeux IDC",
+    "about_idc_url": "https://about.idcgames.com/about/",
+    "about_idc_text": "À propos de",
+    "idc_services_url": "https://about.idcgames.com/about/docs/What-is-IDC-Games/",
+    "idc_services_text": "Prestations service",
+    "idc_games_tools": "https://about.idcgames.com/about/docs/Publishing-Tools/",
+    "idc_games_tools_text": "Outils",
+    "idc_influencer_about_url": "https://about.idcgames.com/about/docs/IDC-Influencer2/",
+    "idc_influencer_about_text": "Influenceuses",
+    "developer_corner_url": "https://developer.idcgames.com/gameintegration/",
+    "developer_corner_text": "Coin développeurs",
+    "distribute_your_game_text": "Distribuez votre jeu avec IDC Games",
+    "url_legal_conditions": "Terms of use",
+    "privacy_legal_title_txt": "Conditions d'utilisation",
+    "url_privacy_policy": "Privacy Policy",
+    "privacy_policy_footer": "Politique de confidentialité",
+    "url_return_policy": "https://idcgames.com",
+    "return_policy_title": "Politique de retour",
+    "rights_reserved": "© IDC GAMES 2021. Tous les droits sont réservés.",
+    "cookies_footer": "Biscuits",
+    "cookies_title_text": "Cookies"
+  },
+
   "translations": {
     "en": "Anglais",
     "fr": "Français"

@@ -18,18 +18,18 @@ export default {
   children: [
     {
       path: "/",
+      name: "portal",
+      component: Portal,
+      meta: {
+        title: i18n.t("routes.dashboard"),
+      },
+    },
+    {
+      path: "/register",
       name: "register",
       component: Register,
       meta: {
         title: i18n.t("routes.register"),
-      },
-    },
-    {
-      path: "/portal",
-      name: "portal",
-      component: Portal,
-      meta: {
-        title: i18n.t("routes.onboarding_application"),
       },
     },
     {

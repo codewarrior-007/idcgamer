@@ -1,0 +1,567 @@
+@charset "UTF-8";
+/*
+======================================================================================================================
+Sidebar-nav -- MenÃº lateral de navegaciÃ³n en IDC
+======================================================================================================================
+*/
+.sidenav {
+  height: calc(100vh - 60px);
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1020;
+  top: 60px;
+  left: -1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 0;
+  padding-left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+.sidenav.sidenav-after {
+  height: calc(100vh - 51px);
+  top: 51px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.sidenav .collapse li:hover {
+  background-color: rgba(0, 255, 126, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+#language-collapse a {
+  background-color: rgba(0, 255, 126, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+#language-collapse a:hover {
+  background-color: rgba(0, 255, 126, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.sidenav .collapse a {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.sidenav .collapse a:hover {
+  color: #66ffb2; }
+
+#categoriesBtn .lottie {
+  width: 30px;
+  height: 30px;
+  z-index: 1040;
+  cursor: pointer; }
+
+.nav-custom-after #categoriesBtn .lottie svg path {
+  stroke: #00ff7e; }
+
+.sidenav-closed {
+  width: 0; }
+
+.sidenav-opened {
+  width: 320px; }
+
+@media (max-width: 575.98px) {
+  .sidenav-opened {
+    width: 100vw; } }
+
+.bg-gradient {
+  background-image: linear-gradient(45deg, springgreen 1%, #314954 50%, #1b1d2c 100%);
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s; }
+
+.forum-append-button {
+  height: 34px; }
+  .forum-append-button button {
+    background-color: #13181d;
+    border-color: #6c757d; }
+    .forum-append-button button i {
+      color: #6c757d; }
+
+/*
+======================================================================================================================
+Menu especi­fico del juego Top
+======================================================================================================================
+*/
+.nav-forum {
+  background-image: url("../img/textures/noisy_net.png");
+  background-repeat: repeat;
+  padding: 0.3rem 1rem;
+  border-bottom: 1px solid #00ff7f; }
+
+.nav-forum .dropdown-menu {
+  background-image: url("../img/textures/noisy_net.png");
+  background-repeat: repeat; }
+
+.navbar li {
+  list-style: none; }
+
+.navbar-brand {
+  background-image: url("https://idcgames.net/cdn/img/default/logo-idc-light.png");
+  height: 40px;
+  width: 44px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.nav-forum a {
+  color: #fff !important;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.nav-custom .dropdown-item, .nav-custom .dropdown-menu a {
+  color: #fff; }
+
+.nav-custom .logged a {
+  color: #314954; }
+
+.nav-custom-after .logged a {
+  color: #00ff7f !important; }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbarNav .fontSecondarySmall {
+    font-size: 1.05rem; }
+  #navbarNav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  #navbarNav .nav-link {
+    padding: 0.5rem 0.55rem; }
+  #navbarNav .menu-reduced {
+    display: none; } }
+
+/*Menu lateral*/
+.featured {
+  background: rgba(0, 255, 126, 0.2); }
+
+.flag {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  margin: -20px; }
+
+@media (max-width: 575.98px) {
+  .flag {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin: -20px; } }
+
+.language-menu.dropdown-menu.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: .25rem;
+  width: 90vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent; }
+
+.language-menu a {
+  width: 97px; }
+
+/*////////////////////////Perfect Scroll bar css
+ * Container style
+ */
+.ps {
+  overflow: hidden !important;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto; }
+
+/*
+   * Scrollbar rail styles
+   */
+.ps__rail-x {
+  display: none;
+  opacity: 0;
+  transition: background-color 0.2s linear, opacity 0.2s linear;
+  -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
+  height: 15px;
+  /* there must be 'bottom' or 'top' for ps__rail-x */
+  bottom: 0px;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps__rail-y {
+  display: none;
+  opacity: 0;
+  transition: background-color 0.2s linear, opacity 0.2s linear;
+  -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
+  width: 15px;
+  /* there must be 'right' or 'left' for ps__rail-y */
+  right: 0;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps--active-x > .ps__rail-x,
+.ps--active-y > .ps__rail-y {
+  display: block;
+  background-color: transparent; }
+
+.ps:hover > .ps__rail-x,
+.ps:hover > .ps__rail-y,
+.ps--focus > .ps__rail-x,
+.ps--focus > .ps__rail-y,
+.ps--scrolling-x > .ps__rail-x,
+.ps--scrolling-y > .ps__rail-y {
+  opacity: 0.6; }
+
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: #343a40;
+  opacity: 0.9; }
+
+/*
+   * Scrollbar thumb styles
+   */
+.ps__thumb-x {
+  background-color: #00ff7f;
+  border-radius: 6px;
+  transition: background-color 0.2s linear, height 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s linear, height 0.2s ease-in-out;
+  height: 6px;
+  /* there must be 'bottom' for ps__thumb-x */
+  bottom: 2px;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps__thumb-y {
+  background-color: #00ff7f;
+  border-radius: 6px;
+  transition: background-color 0.2s linear, width 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s linear, width 0.2s ease-in-out;
+  width: 6px;
+  /* there must be 'right' for ps__thumb-y */
+  right: 2px;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps__rail-x:hover > .ps__thumb-x,
+.ps__rail-x:focus > .ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+  background-color: #00ff7f;
+  height: 11px; }
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: #00ff7f;
+  width: 11px; }
+
+/* MS supports */
+@supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important; } }
+/*
+======================================================================================================================
+REGISTER/LOGIN CSS IDC GAMES
+======================================================================================================================
+*/
+.modal-content {
+  border: none;
+  -webkit-box-shadow: 1px 3px 9px 3px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 3px 9px 3px rgba(0, 0, 0, 0.8); }
+
+@media (min-width: 1200px) {
+  .loginModal .modal-lg, .registerModal .modal-lg {
+    max-width: 830px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .loginModal .modal-lg, .registerModal .modal-lg {
+    max-width: 830px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .loginModal .modal-lg, .registerModal .modal-lg {
+    max-width: 80vw; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .loginModal .modal-lg, .registerModal .modal-lg {
+    max-width: 85vw; } }
+
+@media (min-width: 768px) {
+  .loginModal .close, .registerModal .close {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .loginModal .close, .registerModal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px; } }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040; }
+
+.modal-backdrop.fade {
+  opacity: 0; }
+
+.modal-backdrop.show {
+  opacity: .7; }
+
+/*
+================================
+Fonts
+================================
+*/
+.alredyRegistered p, .noYetRegistered p {
+  font-size: 0.9rem; }
+
+/*
+================================
+Upper link
+================================
+*/
+.alredyRegistered {
+  position: absolute;
+  top: 15px; }
+
+.noYetRegistered .lineaHorizontalEstrecha {
+  width: 45%;
+  float: right; }
+
+@media (max-width: 575px) {
+  .noYetRegistered .lineaHorizontalEstrecha {
+    display: none; } }
+
+.alredyRegistered .lineaHorizontalEstrecha {
+  width: 40%;
+  float: right; }
+
+@media (max-width: 575px) {
+  .alredyRegistered .lineaHorizontalEstrecha {
+    display: none; } }
+
+/*
+================================
+Main container
+================================
+*/
+.modalMainContentContainer {
+  position: relative;
+  max-width: 100%; }
+
+.loginModal .btn-cta, .registerModal .btn-cta {
+  font-size: 1.7rem;
+  padding: 1% 5%; }
+
+@media (max-width: 575px) {
+  .loginModal .btn-cta, .registerModal .btn-cta {
+    font-size: 1.6rem;
+    padding: 2% 5%; } }
+
+/*
+================================
+Or Register with
+================================
+*/
+.btn-social {
+  max-height: 46px;
+  width: 182px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
+  white-space: nowrap;
+  font-family: "Jura", sans-serif !important; }
+
+.btn-social:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
+
+.btn-msn {
+  color: #fff;
+  background-color: #3f729b;
+  max-height: 41px;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-msn img {
+  max-height: 22px; }
+
+.btn-twitter {
+  color: #fff;
+  background-color: #55acee;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-yahoo {
+  color: #fff;
+  background-color: #720e9e;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-steam {
+  color: #fff;
+  background-color: #77A934;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-google {
+  color: #757575;
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+/*Responsive basado en la altura de la pantalla y no en el ancho*/
+@media (max-height: 740px) {
+  .modal .display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2; }
+  .modal .h6 {
+    font-size: 1rem; }
+  .modal h4 {
+    font-size: 1.5rem; }
+  .loginModal .btn-cta.mt-xl-4, .registerModal .btn-cta.mt-xl-4 {
+    margin-top: .25rem !important; }
+  .modalMainContentContainer .mt-xl-5 {
+    margin-top: .75rem !important; }
+  .modalMainContentContainer .pt-xl-4 {
+    padding-top: .5rem !important; } }
+
+/*
+======================================================================================================================
+Botones de logado/no logado
+======================================================================================================================
+*/
+/* .unlogged, .logged {
+    display: none;
+} */
+/*
+======================================================================================================================
+New, notifications
+======================================================================================================================
+*/
+.nav-custom-after .logged a {
+  color: #fff !important; }
+
+.nav-custom-after .logged a:hover {
+  color: #66ffb2 !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.nav-link:hover {
+  color: #66ffb2 !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+button#notification-btn {
+  background-color: transparent;
+  color: white;
+  border: transparent; }
+
+html {
+  --lh: 1.5rem;
+  line-height: var(--lh); }
+
+.notifications {
+  border-radius: .4em;
+  max-height: 387px;
+  overflow-y: scroll;
+  max-width: 90vw;
+  overflow-x: hidden; }
+
+.notifications .font-italic {
+  --max-lines: 2;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem;
+  /* space for ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 280px;
+  white-space: normal; }
+
+@media (max-width: 350px) {
+  .notifications .font-italic {
+    width: 90vw; } }
+
+.notifications .font-italic::before {
+  position: absolute;
+  content: "   ";
+  inset-block-end: 0;
+  /* "bottom" */
+  inset-inline-end: 0;
+  /* "right" */ }
+
+.notifications .font-italic::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  /* "right" */
+  width: 1rem;
+  height: 1rem; }
+
+.notification-item:last-child {
+  border-bottom: 0 transparent !important; }
+
+.notification-item .close {
+  right: 10px;
+  top: 0px;
+  position: absolute; }
+
+.form-forum-menu {
+  height: 34px !important;
+  border: 1px solid #6c757d !important; }
+
+/*
+======================================================================================================================
+Breadcrumb
+======================================================================================================================
+*/
+@media (max-width: 1199.98px) {
+  #menu .breadcrumb {
+    display: none; } }
+
+.breadcrumb {
+  overflow: hidden;
+  max-width: calc(100vw - 740px); }
+
+.breadcrumb-item {
+  white-space: nowrap; }
+
+.breadcrumb-item:last-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+  
+*::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(121, 192, 121);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(121, 192, 121);  /* creates padding around scroll thumb */
+}

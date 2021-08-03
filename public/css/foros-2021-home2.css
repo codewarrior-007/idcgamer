@@ -1,0 +1,189 @@
+/*
+======================================================================================================================
+Home Forum
+======================================================================================================================
+*/
+.bg-dark-translucid {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.gradient-overlay-7 {
+  background-image: linear-gradient(120deg, #314954, rgba(63, 70, 121, 0.7)); }
+
+.gradient-overlay-8 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.95)));
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.95) 100%); }
+
+span.btn.btn-primary.btn-sm.px-2, .btn-group-sm > span.btn.btn-primary.px-2 {
+  padding: 0.05rem 1rem; }
+
+.h-50px {
+  height: 50px; }
+
+.forum-img {
+  height: 48px;
+  width: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px; }
+
+.forum-link:hover {
+  background-color: #314954;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out; }
+
+@media (min-width: 576px) {
+  .form-forum {
+    min-width: 400px; } }
+
+.gradient-form {
+  background-image: linear-gradient(38deg, rgba(49, 73, 84, 0.4), rgba(63, 70, 121, 0.2)); }
+
+@media (max-width: 575.98px) {
+  .search-form {
+    width: 100%; } }
+
+.search-form button {
+  height: 50px; }
+
+.btn-search {
+  height: 50px; }
+
+/*
+======================================================================================================================
+Card
+======================================================================================================================
+*/
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease-out .5s;
+  transition: all ease-out .5s; }
+
+.card-img-overlay {
+  z-index: 2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all ease-out .5s;
+  transition: all ease-out .5s; }
+
+.gameCard:hover .gameCard-footer {
+  opacity: 1;
+  -webkit-transition: all ease-out .5s;
+  transition: all ease-out .5s; }
+
+.gameCard:hover .card-img-overlay {
+  padding: .5rem;
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s; }
+
+.gameCard:hover .overlay {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.gameCard:hover .box-shadow {
+  -webkit-box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s; }
+
+.bg-gradient {
+  background-image: linear-gradient(45deg, springgreen 1%, #314954 50%, #1b1d2c 100%);
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s; }
+
+/*
+======================================================================================================================
+Home Gog style
+======================================================================================================================
+*/
+.nav-tabs .nav-link {
+  color: #495057; }
+
+.nav-tabs .nav-link.active {
+  color: #00ff7f; }
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: springgreen;
+  border-left-color: transparent; }
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: springgreen;
+  border-left-color: transparent; }
+
+h4.card-title.h6 {
+  font-family: "Jura";
+  font-weight: 700; }
+
+@media (max-width: 575.98px) {
+  h4.card-title.h6 {
+    font-size: .825rem; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h4.card-title.h6 {
+    font-size: .85rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h4.card-title.h6 {
+    font-size: .9rem; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h4.card-title.h6 {
+    font-size: .95rem; } }
+
+@media (min-width: 1200px) {
+  h4.card-title.h6 {
+    font-size: .95rem; } }
+
+.small-card .card {
+  -webkit-box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.5) !important; }
+
+.small-card .card-body {
+  height: 70px; }
+
+.small-card .overlay {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.small-card .card-img-overlay {
+  padding: 3.5rem; }
+
+.small-card:hover .logo-overlay {
+  padding: 3rem;
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s; }
+
+.small-card:hover .overlay {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.small-card .gameCard-img {
+  height: 172px;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.card.bg-small-card {
+  background-image: linear-gradient(100deg, #00ff7f -80%, #314954 110%); }
+
+.gameCard-footer-inner {
+  height: 95px;
+  background-image: linear-gradient(100deg, #00ff7f -80%, #314954 110%); }
